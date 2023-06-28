@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { StarRatingComponent } from '../../particular/star-raiting/star-raiting.component';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,11 @@ import { StarRatingComponent } from '../../particular/star-raiting/star-raiting.
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  // Component logic goes here
+  cartQuantity=0;
+
+  constructor(cartService:CartService) {
+    cartService.getCartObservable().subscribe((newCart) => {
+      this.cartQuantity = newCart.totalCount;
+    })
+  }
 }
