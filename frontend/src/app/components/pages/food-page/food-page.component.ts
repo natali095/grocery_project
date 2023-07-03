@@ -16,13 +16,9 @@ constructor(activatedRoute:ActivatedRoute, foodService:FoodService,
   private cartService:CartService, private router: Router){
   activatedRoute.params.subscribe((params) => {
     if(params.id)
-<<<<<<< HEAD
     foodService.getFoodById(params.id).subscribe(serverFood => {
       this.food = serverFood;
     });
-=======
-    this.food = foodService.getFoodById(params.id);
->>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
   })
 }
 
