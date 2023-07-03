@@ -18,7 +18,10 @@
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
+<<<<<<< HEAD
     "ngx-toastr": "^17.0.2",
+=======
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -26,11 +29,16 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.1",
     "@angular/cli": "~16.1.1",
+<<<<<<< HEAD
     "@angular/compiler-cli": "^16.1.3",
+=======
+    "@angular/compiler-cli": "^16.1.0",
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
+<<<<<<< HEAD
     "karma-coverage": "^1.1.2",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
@@ -40,4 +48,11 @@
   "main": "index.js",
   "author": "",
   "license": "ISC"
+=======
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.1.3"
+  }
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
 }

@@ -1,9 +1,17 @@
 <app-not-found
+<<<<<<< HEAD
 [visible]="!food"
 notFoundMessage="Food Not Found"
 resetLinkText="Back To Homepage">
 </app-not-found>
  <div *ngIf="food" class="container">
+=======
+[visible]="!food.id"
+notFoundMessage="Food Not Found"
+resetLinkText="Back To Homepage">
+</app-not-found>
+ <div *ngIf="food.id" class="container">
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
     <img [src]="food.imageUrl" [alt]="food.name"/>
 
     <div class="details">
@@ -44,4 +52,8 @@ resetLinkText="Back To Homepage">
         <button (click)="addToCart()">Add To Cart</button>
     
       </div>
+<<<<<<< HEAD
 </div> 
+=======
+</div> 
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17

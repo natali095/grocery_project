@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <header>
   <div class="container">
     <a routerLink="/" class="logo">Smak-Shop Grossery</a>
@@ -22,4 +23,33 @@
       </ul>
     </nav>
   </div>
+=======
+
+<header>
+    <div class="container">
+        <a routerLink="/" class="logo">Smak-Shop Grossery</a>
+        <nav>
+            <ul>
+                <li>
+                
+            <a routerLink="/login">Login</a>      
+                  </li>
+        <li class="menu-container">
+            <a routerLink="/dashbard">Jonh</a>
+            <div class="menu">
+                <a routerLink="/profile">Profile</a>
+                <a routerLink="/orders">Orders</a>
+                <a>Logout</a>
+
+            </div>
+        </li>
+        <li>
+            <a routerLink="/cart-page">
+                Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+            </a>
+        </li>
+            </ul>
+        </nav>
+    </div>
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
 </header>

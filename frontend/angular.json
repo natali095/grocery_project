@@ -50,8 +50,12 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css",
               "node_modules/ngx-toastr/toastr.css"
+=======
+              "src/styles.css"
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
             ],
             "scripts": []
           },
@@ -114,7 +118,10 @@
             ],
             "styles": [
               "src/styles.css"
+<<<<<<< HEAD
              
+=======
+>>>>>>> e6b3eccaccf036ccdf4ab844d548618f4022bf17
             ],
             "scripts": []
           }
