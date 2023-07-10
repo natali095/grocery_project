@@ -19,7 +19,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { InputContainerComponent } from './components/particular/input-container/input-container.component';
 import { InputValidationComponent } from './components/particular/input-validation/input-validation.component';
 import { TextInputComponent } from './components/particular/text-input/text-input.component';
-import { DefaultButtonComponent } from './components/particular/default-button/default-button.component'
+import { DefaultButtonComponent } from './components/particular/default-button/default-button.component';
+import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
+import { LoadingComponent } from './components/particular/loading/loading.component'
+import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
+import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
+import { OrderItemsListComponent } from './components/particular/order-items-list/order-items-list.component';
 
 
 
@@ -39,7 +44,11 @@ import { DefaultButtonComponent } from './components/particular/default-button/d
     InputContainerComponent,
     InputValidationComponent,
     TextInputComponent,
-    DefaultButtonComponent
+    DefaultButtonComponent,
+    RegisterPageComponent,
+    LoadingComponent,
+    CheckoutPageComponent,
+    OrderItemsListComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +62,9 @@ import { DefaultButtonComponent } from './components/particular/default-button/d
       newestOnTop:false
     })
   ],
-  providers: [],
+  providers: [
+    {provide:HTTP_INTERCEPTORS, useClass:LoadingInterceptor, multi:true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
