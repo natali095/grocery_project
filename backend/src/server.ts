@@ -4,7 +4,7 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import { connect, ConnectOptions } from 'mongoose';
-
+import orderRouter from './routers/order.router'
 import foodRouter from './routers/food.router';
 import userRouter from './routers/user.router';
 
@@ -20,6 +20,7 @@ app.use(
 
 app.use('/api/foods', foodRouter);
 app.use('/api/users', userRouter);
+app.use('/api/orders', orderRouter);
 
 const port = 5000;
 

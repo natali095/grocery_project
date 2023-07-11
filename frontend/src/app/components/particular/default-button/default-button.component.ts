@@ -7,13 +7,13 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class DefaultButtonComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // Leave it empty if you don't have any specific initialization logic
   }
 
   @Input()
   type: 'submit' | 'button' = 'submit';
   @Input()
-  text:string = 'Submit';
+  text: string = 'Submit';
   @Input()
   bgColor = '#e72929';
   @Input()
@@ -23,9 +23,5 @@ export class DefaultButtonComponent implements OnInit {
   @Input()
   widthRem = 12;
   @Output() 
-  onClick = new EventEmitter()
-
-  
-
-
+  onClick = new EventEmitter();
 }
