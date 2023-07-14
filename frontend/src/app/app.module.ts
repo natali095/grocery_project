@@ -28,6 +28,8 @@ import { OrderItemsListComponent } from './components/particular/order-items-lis
 import { MapComponent } from './components/particular/map/map.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { PaymentPageComponent } from './components/pages/payment-page/payment-page.component';
+import { PaypalButtonComponent } from './components/particular/paypal-button/paypal-button.component';
+import { OrderTrackPageComponent } from './components/pages/order-track-page/order-track-page.component';
 
 
 @NgModule({
@@ -53,6 +55,8 @@ import { PaymentPageComponent } from './components/pages/payment-page/payment-pa
     OrderItemsListComponent,
     MapComponent,
     PaymentPageComponent,
+    PaypalButtonComponent,
+    OrderTrackPageComponent,
 
   ],
   imports: [

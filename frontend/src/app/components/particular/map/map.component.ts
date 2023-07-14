@@ -102,19 +102,17 @@ this.currentMarker.on('dragend', ()=> {
 })
   }
 
-set addAdressLatLng(latLng:LatLng){
-
-  if(!latLng.lat.toFixed) return;
-
-  latLng.lat = parseFloat(latLng.lat.toFixed(8));
-  latLng.lng = parseFloat(latLng.lng.toFixed(8));
-  this.order.addressLatLng = latLng;
-  console.log(this.order.addressLatLng);
+  set addAdressLatLng(latLng: LatLng) {
+    if (!latLng.lat.toFixed) return;
   
-}
-
-get addressLatLng(){
-  return this.order.addressLatLng!;
-}
+    const updatedLatLng = new LatLng(
+      parseFloat(latLng.lat.toFixed(8)),
+      parseFloat(latLng.lng.toFixed(8))
+    );
+    
+    this.order.addressLatLng = updatedLatLng;
+    console.log(this.order.addressLatLng);
+  }
+  
 
 }
